@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/Estilos.css">
+    <script src="js/VigiMensaje.js" > </script>
+    <script src="js/Validar.js" > </script>
+    <title>Cifrado Cesar</title>
+</head>
+<body>
+    <center>
+        
+    
+        <h1 class="Titulo">Cifrado de Vigenere</h1>
+        <h5 class="subtitulo">Ingrese el texto que desea cifrar</h5>
+        <textarea maxlength="200" class="cadena" id="cadena" onkeypress="return validar_entrada_cadena(event)"></textarea>
+        <h5 class="subtitulo">Ingrese la clave</h5>
+        <textarea maxlength="100" class="cadena" id="clave" onkeypress="return validar_entrada_cadena(event)"></textarea>
+        
+        <p>
+         <input class="boton" type="button" value="  Cifrar  " onclick="validar_cod()" >
+         <input class="boton" type="button" value="Descifrar" onclick="validar_decod()" >
+        </p>
+
+        <textarea readonly="true" class="resultado" id="resultado" ></textarea>
+    
+    </center>
+</body>
+</html>
